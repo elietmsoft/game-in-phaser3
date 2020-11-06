@@ -26,10 +26,14 @@ function preload() {
 function create() {
    logo= this.physics.add.image(100,100,'logo');
    logo.body.collideWorldBounds = true;
-   cursors = this.input.keyboard.createCursorKeys();
-
-    
+   cursors = this.input.keyboard.createCursorKeys();    
 }
+
+/*this.add.text(20,20,"Playing Game",{
+    font:"25px Arial",
+    fill:"#007ACC"
+})*/
+
 function update() { 
     //permet de ne plus faire déplacer notre image(logo)
     logo.setVelocityX(0);
